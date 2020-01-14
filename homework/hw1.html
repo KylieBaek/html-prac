@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Webpage Title -->
+	<title>폰케이스 쇼핑몰</title>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=n">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- JS -->   
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- 구글폰트 -->
+	<link href="https://fonts.googleapis.com/css?family=Gaegu|Gugi&display=swap" rel="stylesheet">
+
+	<!-- style -->
+	<style type="text/css">
+		* {
+			font-family: 'Gugi', cursive;
+			font-family: 'Gaegu', cursive;
+		}
+		
+		.wrap {
+			width: 500px;
+			margin: 50px auto 0 auto;
+			padding: 0px 0 0 0;
+		}
+		.comment {
+			color: purple;
+			font-weight: bold;
+		}
+		.mytitle {
+			color: white;
+			text-align: center;
+			background-image: url('https://usercontents-c.styleshare.io/images/22165703/700x432');
+			background-size: cover;
+			background-position: center;
+			width: 500px;
+			height: 400px;
+			border-radius: 0px;
+
+			/* display flex를 쓸 때엔 아래 네 줄이 항상 묶여 다닙니다. */
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		.align{
+			text-align: center;
+		}
+		.backgc{
+			background-color: #ffdeff;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class= "wrap">
+		<div class="mytitle">
+		</div>
+		<h1 class="comment">트윙클 폰케이스</h1> <h5>가격: 28000원</h5>
+		<h6><span style="color:purple">유니크한 감성의 트윙클 폰케이스입니다. <span style="color:red">★마감임박★</span></span></h6>
+		
+
+		<h1 class="comment">주문하기</h1>
+		<form class="backgc">
+			<div class="form-group">
+				<label for="inputAddress">주문자 이름</label>
+				<input type="text" class="form-control" id="inputAddress" placeholder="">
+			</div>
+			<div class="form-group col-md-20">
+				<label for="inputState">수량</label>
+				<select id="inputState" class="form-control">
+					<option selected>--수량을 선택하세요--</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="inputAddress2">주소</label>
+				<input type="text" class="form-control" id="inputAddress2" placeholder="예) 서울시 강남구 테헤란로">
+			</div>
+			<div class="form-group">
+				<label for="inputAddress2">전화번호</label>
+				<input type="text" class="form-control" id="inputAddress2" placeholder="예) 010-XXXX-XXXX">
+			</div>
+			<div class=align>
+				<button type="submit" class="btn btn-primary">주문하기</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
