@@ -29,7 +29,7 @@
 		
 		.wrap {
 			width: 500px;
-			margin: 50px auto 0 auto;
+			margin: 50px auto 50px auto;
 			padding: 0px 0 0 0;
 		}
 		.comment {
@@ -56,8 +56,13 @@
 			text-align: center;
 		}
 		.backgc{
+			padding: 20px 20px 20px 20px;
 			background-color: #ffdeff;
 			
+		}
+		mycolor{
+			color: white;
+			background-color: #pink;
 		}
 	</style>
 </head>
@@ -65,34 +70,43 @@
 	<div class= "wrap">
 		<div class="mytitle">
 		</div>
-		<h1 class="comment">트윙클 폰케이스</h1> <h5>가격: 28000원</h5>
+		<h1 class="comment">트윙클 폰케이스</h1> 
+		<h5>가격: 28000원</h5>
 		<h6><span style="color:purple">유니크한 감성의 트윙클 폰케이스입니다. <span style="color:red">★마감임박★</span></span></h6>
 		
 
 		<h1 class="comment">주문하기</h1>
 		<form class="backgc">
-			<div class="form-group">
-				<label for="inputAddress">주문자 이름</label>
-				<input type="text" class="form-control" id="inputAddress" placeholder="">
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text mycolor" id="basic-addon3">주문자 이름</span>
+				</div>
+				<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
 			</div>
-			<div class="form-group col-md-20">
-				<label for="inputState">수량</label>
-				<select id="inputState" class="form-control">
+
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<label class="input-group-text" for="inputGroupSelect01">수량</label>
+				</div>
+				<select class="custom-select" id="inputGroupSelect01">
 					<option selected>--수량을 선택하세요--</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
 				</select>
 			</div>
-			<div class="form-group">
-				<label for="inputAddress2">주소</label>
-				<input type="text" class="form-control" id="inputAddress2" placeholder="예) 서울시 강남구 테헤란로">
+
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon3">주소</span>
+				</div>
+				<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
 			</div>
-			<div class="form-group">
-				<label for="inputAddress2">전화번호</label>
-				<input type="text" class="form-control" id="inputAddress2" placeholder="예) 010-XXXX-XXXX">
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon3">전화번호</span>
+				</div>
+				<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
 			</div>
 			<div class=align>
 				<button type="submit" class="btn btn-primary">주문하기</button>
