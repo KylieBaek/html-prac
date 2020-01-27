@@ -28,7 +28,7 @@
 		}
 		
 		.wrap {
-			width: 500px;
+			width: 600px;
 			margin: 50px auto 50px auto;
 			padding: 0px 0 0 0;
 		}
@@ -36,13 +36,13 @@
 			color: purple;
 			font-weight: bold;
 		}
-		.mytitle {
+		.myimage {
 			color: white;
 			text-align: center;
 			background-image: url('https://usercontents-c.styleshare.io/images/22165703/700x432');
 			background-size: cover;
 			background-position: center;
-			width: 500px;
+			width: 600px;
 			height: 400px;
 			border-radius: 0px;
 
@@ -60,20 +60,28 @@
 			background-color: #ffdeff;
 			
 		}
-		mycolor{
-			color: white;
-			background-color: #pink;
+		.wrapper {
+			margin: 10px auto auto auto;
+			display: grid;
+			grid-template-columns: 250px 150px 150px;
 		}
+		.wrapper > h5{
+			padding: 15px 0px 0px 15px;
+			font-weight: bold;
+		}
+
 	</style>
 </head>
 <body>
 	<div class= "wrap">
-		<div class="mytitle">
+		<div class="myimage">
 		</div>
-		<h1 class="comment">트윙클 폰케이스</h1> 
-		<h5>가격: 28000원</h5>
-		<h6><span style="color:purple">유니크한 감성의 트윙클 폰케이스입니다. <span style="color:red">★마감임박★</span></span></h6>
-		
+		<div class ="wrapper">
+			<h1 class="comment">트윙클 폰케이스</h1> 
+			<h5>가격: 28000원</h5>
+			<h5 style="color:red" >★마감임박★</h5>
+		</div>
+		<h6><span style="color:purple">유니크한 감성의 트윙클 폰케이스입니다. 아이폰7과 아이폰8 기종에 적합합니다. 이 제품은 handmade 제품으로 주문 즉시 만들어 드립니다. 특별함을 경험해 보세요.</span></h6>
 
 		<h1 class="comment">주문하기</h1>
 		<form class="backgc">
@@ -93,6 +101,8 @@
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
 				</select>
 			</div>
 
@@ -108,7 +118,7 @@
 				</div>
 				<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
 			</div>
-			<div class=align>
+			<div class=align style ="color:purple">
 				<button type="submit" class="btn btn-primary">주문하기</button>
 			</div>
 		</form>
