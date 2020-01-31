@@ -21,8 +21,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Gaegu|Gugi&display=swap" rel="stylesheet">
 
 	<script>
-		let cnt =0;
+		
 		function myclick(){
+			let cnt=0;
 			let input1 = $('#input-1').val();
 			let input2 = $('#input-2 option:selected').val();
 			let input3 = $('#input-3').val();
@@ -32,14 +33,19 @@
 
 			if(input1==""){
 				alert("이름을 입력하세요")
+				return;
 			}else if(input2=="--수량을 선택하세요--"){
 				alert("수량을 입력하세요")
+				return;
 			}else if(input3==""){
 				alert("주소를 입력하세요")
+				return;
 			}else if(input4==""){
 				alert("전화번호를 입력하세요")
+				return;
 			}else if(!inp4.test(input4)){
 				alert("010-xxxx-xxxx 형식으로 전화번호를 입력하세요")
+				return;
 			}else{
 				alert("주문 완료!");
 				cnt =1;
@@ -165,17 +171,15 @@
 				<input type="text" class="form-control" id="input-4" aria-describedby="basic-addon3">
 			</div>
 			<div class="align">
-				<button id="mybutton" onclick ="myclick()" type="submit" class="btn btn-primary">주문하기</button>
+				<button id="mybutton" onclick ="myclick()" type="button" class="btn btn-primary">주문하기</button>
 			</div>
 		</form>
 	</div>
 
 	<div class="wrap">
 		<table id="mytable" border="0" width="600">
-			<caption>
-				<h2 class="comment">주문 현황 리스트</h2>
-			</caption>
-
+			
+			<h2 class="comment">주문 현황 리스트</h2>
 			<thead style="font-weight :bold;">
 				<tr>
 					<td>주문자 이름</td>
