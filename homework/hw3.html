@@ -27,10 +27,23 @@
 			listing();
 		});
 
+		function tableappend(name, count,address, phone){
+			let input1 = name;
+			let input2 = count;
+			let input3 = address;
+			let input4 =  phone;
+
+			let tmp_html ='<tr><td>'+input1+'</td>\
+			<td>'+input2+'</td>\
+			<td>'+input3+'</td>\
+			<td>'+input4+'</td>\
+			</tr>';
+			$('#tablebody').append(tmp_html);
+
+		}
+
 
 		function listing() {
-        // 여기에 코드를 입력하세요
-        
         let target_url = 'http://spartacodingclub.shop/order';
         $.ajax({
         	type: "GET",
@@ -44,12 +57,7 @@
         			let input3 = response['orders'][i]['address'];
         			let input4 = response['orders'][i]['phone'];
 
-        			let tmp_html ='<tr><td>'+input1+'</td>\
-        			<td>'+input2+'</td>\
-        			<td>'+input3+'</td>\
-        			<td>'+input4+'</td>\
-        			</tr>';
-        			$('#tablebody').append(tmp_html);
+        			tableappend(input1,input2,input3,input4);
         		}
         		
         		
@@ -86,17 +94,12 @@
     		cnt =1;
     	}
 
-    	if(cnt==1){
-    		let tmp_html ='<tr><td>'+input1+'</td>\
-    		<td>'+input2+'</td>\
-    		<td>'+input3+'</td>\
-    		<td>'+input4+'</td>\
-    		</tr>';
-    		$('#tablebody').append(tmp_html);
-    	}
-
+    	if(cnt==1) tableappend(input1,input2,input3,input4);
 
     }
+
+
+
 
 
 </script>
